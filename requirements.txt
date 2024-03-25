@@ -1,5 +1,5 @@
 pandas
-yfinance
+yfinance==0.2.37
 plotly
 requests
 beautifulsoup4
