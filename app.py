@@ -69,7 +69,7 @@ try:
     for i in range(len(tickers)):
         try:
             element.write(f"{tickers[i]} Beta: {(find_beta(tickers[i], start, end)):.3f}")
-            #time.sleep(.5)
+            time.sleep(.2)
             beta += [find_beta(tickers[i], start, end)]
         except:
             element.error("Error!")
@@ -83,7 +83,7 @@ try:
     for i in range(len(tickers)):
         try:
             element.write(f"{tickers[i]} Monthly Return: {mult_df[tickers[i]].sum():.3f}%")
-            #time.sleep(.5)
+            time.sleep(.3)
             Monthly += [mult_df[tickers[i]].sum()]
         except:
             element.error("No chart to display! Please enter your portfolio in the sidebar.")
