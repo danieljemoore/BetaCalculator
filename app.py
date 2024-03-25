@@ -1,7 +1,11 @@
 import pandas as pd
 import datetime as dt 
 import time
-import yfinance as yf
+try:
+    !pip install yfinance
+    import yfinance as yf
+except:
+    import yfinance as yf
 
 
 import streamlit as st
